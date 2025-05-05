@@ -1,0 +1,92 @@
+@font-face {
+  font-family: tagesschrift;
+  src: url(../Fonts/tagesschrift/Tagesschrift-Regular.ttf);
+}
+@font-face {
+  font-family: josefin;
+  src: url(../Fonts/josefin-sans/JosefinSans-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+
+}
+body {
+  width: 100vw;
+  font-size: 16px;
+  font-family: josefin;
+  background-color: rgb(60, 60, 60);
+  color: aqua;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: tagesschrift;
+}
+h1 {
+  font-size: 4rem;
+  justify-self: center;
+  margin-bottom: 1%;
+}
+.header {
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: rgb(26, 26, 26);
+  padding: 2%;
+}
+h2 {
+  margin-left: 5%;
+}
+main {
+  padding: 5%;
+}
+.btn {
+  padding: 7px 12px;
+  border-radius: 10px;
+  background-color: rgb(26, 26, 26);
+  color: aqua;
+  font-family: tagesschrift;
+  cursor: pointer;
+}
+#create-blog-btn {
+  margin-left: 5%;
+}
+#blog-title {
+  display: block;
+  width: 50%;
+  margin: 2% 0% 3% 0%;
+}
+#blog-body {
+  display: block;
+  width: 50%;
+  height: 200px;
+  margin: 2% 0% 3% 0%;
+  color: aqua;
+}
+form {
+  display: flexbox;
+}
+h3 {
+  margin-left: 5%;
+  padding: 2% 0%;
+}
+.box {
+  border: 2px solid aqua;
+  padding: 3px;
+  
+  width: 60%;
+  
+}
+.blog-title-box, .blog-body-box {
+  margin: 0%;
+  padding: 2%;
+  width: 100%;
+
+}
+.input-box {
+  background-color: rgb(26, 26, 26);
+  color: aqua;
+}
+input::placeholder {
+  color: aqua;
+}

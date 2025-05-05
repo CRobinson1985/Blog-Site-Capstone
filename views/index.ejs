@@ -1,0 +1,27 @@
+<%- include("header.ejs") %>
+<main>
+  <h2>Blogs from most recent</h2>
+  <a href="/create"><input type="button" class="btn" id="create-blog-btn" value="Create New Blog"  /></a>
+
+<% if (locals.blogposts) { %>
+  <% for (i = 0; i < blogposts.length; i++) { %>
+<div class="blog-box box">
+  <div class="blog-title-box box">
+<h3>
+  <%= blogposts[i].title %>
+</h>
+<p>
+  <%= blogposts[i].date %>
+</p>
+</div>
+<div class="box blog-body-box">
+<p>
+  <%= blogposts[i].body %>
+</p>
+</div>
+</div>
+<input type="button" class="btn edit-btn" action="update"  value="Edit" />
+<input type="button" class="btn delete-btn" action="delete" value="Delete" />
+<% } %>
+<% } %>
+</main>
